@@ -1,0 +1,21 @@
+<div class="container">
+  <h2 mat-dialog-title>ADD TITLE</h2>
+  <mat-dialog-content class="mat-typography">
+    <div class="example-container">
+      <mat-form-field>
+        <mat-label>TITLE</mat-label>
+        <input matInput [(ngModel)]="tableform.title" required>
+      </mat-form-field>
+      <br />
+      <mat-form-field>
+        <mat-label>DESCRIPTION</mat-label>
+        <input matInput [(ngModel)]="tableform.description" required>
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button  cdkFocusInitial (click)="saveform()">SAVE</button>
+  </mat-dialog-actions>
+
+</div>
